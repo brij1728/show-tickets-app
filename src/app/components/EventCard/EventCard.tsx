@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 interface EventCardProps {
   image: string;
@@ -7,12 +8,27 @@ interface EventCardProps {
   sportName: string;
 }
 
-export const EventCard: React.FC<EventCardProps> = ({ image, teamName, totalEvents, sportName }) => {
+export const EventCard: React.FC<EventCardProps> = ({
+  image,
+  teamName,
+  totalEvents,
+  sportName,
+}) => {
   return (
-    <div className="max-w-sm w-full mx-auto">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <a href="#" className="block hover:bg-gray-100 transition duration-300">
-          <img src={image} alt={teamName} className="w-full h-48 object-cover" />
+    <div className="max-w-sm w-64 p-4">
+      <a href="#" className="block hover:bg-gray-100 transition duration-300">
+        <div style={{ position: "relative", height: "400px", maxWidth: 400 }}>
+          <Image
+            src={image}
+            alt={teamName}
+            fill
+            sizes="(min-width: 808px) 50vw, 100vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <div>
           <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">{teamName}</h3>
             <div className="grid grid-cols-2 gap-2">
@@ -26,8 +42,8 @@ export const EventCard: React.FC<EventCardProps> = ({ image, teamName, totalEven
               </div>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   );
 };
