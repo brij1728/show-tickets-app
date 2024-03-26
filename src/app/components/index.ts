@@ -1,1 +1,2 @@
-export * from './TeamEvents'
+export * from "./TeamEvents";
+export { ThemePicker } from "./ThemePicker";
