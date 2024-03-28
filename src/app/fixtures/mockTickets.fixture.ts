@@ -30,7 +30,7 @@ export const mockTickets:TicketType[] = [
 		day:'SUN',
 		time: '4:30 PM',
 		place: 'Las Vegas Ballpark, Las Vegas, Nevada',
-		collectionType: 'Aces Collection'
+		collectionType: 'Take Flight Collection'
 		
 	}
 ]

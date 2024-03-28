@@ -29,10 +29,13 @@ export const TicketCard: React.FC<TicketCardProps> = ({
               objectFit: "cover",
         }} />
       </div>
-      <div className="text-lg font-semibold">{teamName}</div>
-      <div className="text-gray-500 mb-2">{`${day}, ${date} at ${time}`}</div>
-      <div className="text-gray-600 mb-2">{place}</div>
-      <div className="text-gray-600">{`Collection Type: ${collectionType}`}</div>
+      <div className="mt-4">- - - - - - - - - - - - - - - - - - - - - - -</div>
+      <div className="text-center">
+        <h3 className="ticketTeamName mb-4 mt-4">{teamName}</h3>
+        <h3 className="ticketDate mb-4">{`${date} | ${day} | ${time}`}</h3>
+        <h3 className="ticketPlace mb-4">{place}</h3>
+        <h3 className="ticketCollection">{ collectionType}</h3>
+      </div>
     </div>
   );
 };
