@@ -4,7 +4,7 @@
 
 
 
-.ticketTeamName {
+.teamName {
   font-size: 17px;
   font-weight: 500;
   color: #000; 
@@ -23,9 +23,45 @@
 }
 
 .ticketCollection {
-  font-size: 12.73;
+  font-size: 12.73px;
   font-weight: 400;
   color: #ffffff;
   background-color: #1D1D1F;
 ;
+}
+
+.eventText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #525965;
+}
+
+.eventText2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.eventBlock {
+  background-color: #F7F7F8;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.adTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222D3A;
+}
+
+.adText {
+  font-size: 12.8px;
+  font-weight: 400;
+  color:#525965;
+}
+
+.eventTitle{
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
 }

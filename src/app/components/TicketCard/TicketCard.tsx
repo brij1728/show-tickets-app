@@ -31,7 +31,7 @@ export const TicketCard: React.FC<TicketCardProps> = ({
       </div>
       <div className="mt-4">- - - - - - - - - - - - - - - - - - - - - - -</div>
       <div className="text-center">
-        <h3 className="ticketTeamName mb-4 mt-4">{teamName}</h3>
+        <h3 className="teamName mb-4 mt-4">{teamName}</h3>
         <h3 className="ticketDate mb-4">{`${date} | ${day} | ${time}`}</h3>
         <h3 className="ticketPlace mb-4">{place}</h3>
         <h3 className="ticketCollection">{ collectionType}</h3>

@@ -27,6 +27,6 @@ export const mockEvents: EventType[] = [
     image: "/media/images/team4.jpeg",
     teamName: "Las Vegas Aviators",
     totalEvents: 28,
-    sportName: "Las Vegas Aviators",
-  },
+    sportName: "Baseball",
+  }, 
 ];
