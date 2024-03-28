@@ -39,8 +39,8 @@ export const TicketCard: React.FC<TicketCardProps> = ({
         <div className="absolute right-[-12px] mr-[-1px] h-6 w-6 rounded-full bg-[rgb(230,230,240)] dark:bg-[rgb(29,28,39)]"></div>
       </div>
       <div className="text-center m-4">
-        <h3 className="teamName mb-4 mt-4">{teamName}</h3>
-        <h3 className="ticketDate mb-4">{`${date} | ${day} | ${time}`}</h3>
+        <h3 className="text-sm font-normal mb-4 mt-4">{teamName}</h3>
+        <h3 className="text-sm font-normal mb-4">{`${date} | ${day} | ${time}`}</h3>
         <h3 className="ticketPlace mb-4">{place}</h3>
         <h3 className="ticketCollection">{collectionType}</h3>
       </div>
