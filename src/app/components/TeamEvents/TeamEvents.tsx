@@ -25,7 +25,7 @@ export const TeamEvents = () => {
       </div>
 
       <div className="flex justify-center">
-        <button className="seeMoreButton">See More</button>
+        <button className="font-semibold text-sm text-white bg-[#2C9CF0] rounded px-8 py-3.5">See More</button>
       </div>
     </div>
   );

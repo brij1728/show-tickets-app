@@ -2,41 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.ticketPlace {
-  font-size: 14px;
-  font-weight: 400;
-  color: #525965;
-  ;
-}
-
-.ticketCollection {
-  font-size: 12.73px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #1D1D1F;
-}
-
-.adTitle {
-  font-size: 20px;
-  font-weight: 600;
-  color: #222D3A;
-}
-
-.adText {
-  font-size: 12.8px;
-  font-weight: 400;
-  color: #525965;
-}
 
 
-.seeMoreButton {
-  font-size: 14px;
-  font-weight: 600;
-  color: #FFFFFF;
-  background-color: #2C9CF0;
-  padding: 14px 32px;
-  border-radius: 4px;
-}
+
 
 .foldable-ticket {
   height: 24px;
