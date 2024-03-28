@@ -37,3 +37,12 @@
   padding: 14px 32px;
   border-radius: 4px;
 }
+
+.foldable-ticket {
+  height: 24px;
+  width: 100%;
+  --mask: radial-gradient(12px at 12px 50%, #0000 100%, #000) -12px/ 100% 24px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  clip-path: none;
+}
