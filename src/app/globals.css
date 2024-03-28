@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
+/** Mask generated from using https://css-generators.com/custom-borders/ */
 .foldable-ticket {
   height: 24px;
   width: 100%;
-  --mask: radial-gradient(12px at 12px 50%, #0000 100%, #000) -12px/ 100% 24px;
+  --mask: radial-gradient(12px at 12px 50%, #0000 99.99%, #000) -12px/ 100% 24px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   clip-path: none;
+}
+
+/** Dotted border inspired from https://kovart.github.io/dashed-border-generator/, replaced <rect /> with <line /> to fit our use case */
+.foldable-ticket .dotted-line {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='0' y1='0' x2='100%25' y2='0' stroke='%23A9ACB2' stroke-width='1.5' stroke-dasharray='6%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.dark .foldable-ticket .dotted-line {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='0' y1='0' x2='100%25' y2='0' stroke='%23818A97' stroke-width='1.5' stroke-dasharray='6%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
