@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.teamName {
-  font-size: 17px;
-  font-weight: 500;
-  color: #000; 
-}
 .ticketDate {
   font-size: 14px;
   font-weight: 400;
@@ -18,8 +11,8 @@
 .ticketPlace {
   font-size: 14px;
   font-weight: 400;
-  color:#525965;
-;
+  color: #525965;
+  ;
 }
 
 .ticketCollection {
@@ -27,25 +20,6 @@
   font-weight: 400;
   color: #ffffff;
   background-color: #1D1D1F;
-;
-}
-
-.eventText {
-  font-size: 12px;
-  font-weight: 400;
-  color: #525965;
-}
-
-.eventText2 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #000;
-}
-
-.eventBlock {
-  background-color: #F7F7F8;
-  border-radius: 2px;
-  padding: 10px;
 }
 
 .adTitle {
@@ -57,14 +31,9 @@
 .adText {
   font-size: 12.8px;
   font-weight: 400;
-  color:#525965;
+  color: #525965;
 }
 
-.eventTitle{
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-}
 
 .seeMoreButton {
   font-size: 14px;
@@ -73,5 +42,4 @@
   background-color: #2C9CF0;
   padding: 14px 32px;
   border-radius: 4px;
-;
 }

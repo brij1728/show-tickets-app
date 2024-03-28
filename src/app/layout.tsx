@@ -19,9 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={
+          inter.className +
+          `bg-[#F7F7F8] dark:bg-[#292B32] text-black dark:text-white`
+        }
+      >
         <ThemePicker />
-       
+
         {children}
       </body>
     </html>

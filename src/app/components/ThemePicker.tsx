@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FiMoon, FiSettings, FiSun } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
@@ -32,14 +32,6 @@ export const ThemePicker: React.FC = () => {
     setShowDropdown(false);
   };
 
-  // const onThemeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-  //   const newTheme = e.target.value as ThemeOption;
-  //   setTheme(newTheme);
-  //   localStorage.setItem("theme", newTheme);
-  //   applyTheme(newTheme);
-  //   setShowDropdown(false);
-  // }
-
   const getIcon = (theme: ThemeOption) => {
     switch (theme) {
       case "light":
@@ -54,16 +46,19 @@ export const ThemePicker: React.FC = () => {
 
   return (
     <div className="relative ">
-      <div className="flex items-center space-x-2 cursor-pointer " onClick={() => setShowDropdown(!showDropdown)}>
+      <div
+        className="flex items-center space-x-2 cursor-pointer "
+        onClick={() => setShowDropdown(!showDropdown)}
+      >
         <div>{getIcon(theme)}</div>
         <label htmlFor="theme-select">Theme</label>
       </div>
       {showDropdown && (
-        <div className="absolute mt-2 rounded border border-gray-300 bg-white shadow-md z-10">
+        <div className="absolute mt-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-black shadow-md z-10">
           {["light", "dark", "system"].map((option) => (
             <div
               key={option}
-              className="flex items-center px-4 py-2 hover:bg-gray-400 cursor-pointer"
+              className="flex items-center px-4 py-2 hover:bg-gray-400 dark:hover:bg-gray-500 cursor-pointer"
               onClick={() => onThemeChange(option as ThemeOption)}
             >
               {getIcon(option as ThemeOption)}
