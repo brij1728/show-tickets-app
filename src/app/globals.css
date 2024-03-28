@@ -65,3 +65,13 @@
   font-weight: 700;
   color: #000;
 }
+
+.seeMoreButton {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #2C9CF0;
+  padding: 14px 32px;
+  border-radius: 4px;
+;
+}
