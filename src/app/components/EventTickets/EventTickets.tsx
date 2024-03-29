@@ -26,11 +26,24 @@ export const EventTickets = () => {
       </div>
       <Swiper
         spaceBetween={2}
-        slidesPerView={4}
         navigation
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+        }}
       >
         {mockTickets.map((ticket: TicketType) => (
           <SwiperSlide key={ticket.id}>
