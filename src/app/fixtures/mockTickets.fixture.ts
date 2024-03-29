@@ -32,5 +32,36 @@ export const mockTickets:TicketType[] = [
 		place: 'Las Vegas Ballpark, Las Vegas, Nevada',
 		collectionType: 'Take Flight Collection'
 		
+	},
+	{
+		id: '4',
+		image: '/media/images/ticket2.jpeg',
+		teamName: 'Sacramento River Cats',
+		date: 'OCT 15',
+		day:'SUN',
+		time: '4:30 PM',
+		place: 'Sutter Health Park, Sacramento, California',
+		collectionType: 'Orange Collection'
+
+	},
+	{
+		id: '5',
+		image: '/media/images/ticket1.jpeg',
+		teamName: 'Las Vegas Aviators',
+		date: 'OCT 15',
+		day:'SUN',
+		time: '4:30 PM',
+		place: 'Las Vegas Ballpark, Las Vegas, Nevada',
+		collectionType: 'Take Flight Collection'
+	},
+	{
+		id: '6',
+		image: '/media/images/ticket2.jpeg',
+		teamName: 'Sacramento River Cats',
+		date: 'OCT 15',
+		day:'SUN',
+		time: '4:30 PM',
+		place: 'Sutter Health Park, Sacramento, California',
+		collectionType: 'Orange Collection'
 	}
 ]

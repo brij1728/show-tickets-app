@@ -1,6 +1,5 @@
 import "./globals.css";
 
-import { Container } from "postcss";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { ThemePicker } from "./components";

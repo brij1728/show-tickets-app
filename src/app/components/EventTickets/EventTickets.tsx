@@ -1,13 +1,22 @@
+"use client";
+
+import 'swiper/css';
+
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import React from "react";
+import SwiperCore from "swiper/core";
 import { TicketCard } from "../TicketCard";
 import { TicketType } from "@/app/types";
 import { mockTickets } from "@/app/fixtures/mockTickets.fixture";
 
+SwiperCore.use([Navigation, Pagination]);
+
 export const EventTickets = () => {
   return (
-    <div className="container flex flex-col  mt-16 p-4 bg-[linear-gradient(180deg, background: linear-gradient( #F9F8FF 0%, #F3F9FF 100%);
-)] dark:bg-[linear-gradient(180deg,#18282A,#221A2C)]">
-      <div className="  ">
+    <div className="container mt-16 p-4 bg-gradient-to-b from-white via-gray-200 to-white dark:from-[#18282A] dark:via-[#221A2C] dark:to-[#18282A]">
+      <div>
         <h2 className="font-bold text-lg mb-4">Collection Spotlight</h2>
         <h3 className="mb-8">
           Discover extraordinary moments with our Spotlight Collection
@@ -15,20 +24,28 @@ export const EventTickets = () => {
           experience. Grab yours today!
         </h3>
       </div>
-      <div className="flex flex-wrap  gap-4 mb-8">
+      <Swiper
+        spaceBetween={2}
+        slidesPerView={2}
+        navigation
+        pagination={{ clickable: true }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
         {mockTickets.map((ticket: TicketType) => (
-          <TicketCard
-            key={ticket.id}
-            image={ticket.image}
-            teamName={ticket.teamName}
-            date={ticket.date}
-            day={ticket.day}
-            time={ticket.time}
-            place={ticket.place}
-            collectionType={ticket.collectionType}
-          />
+          <SwiperSlide key={ticket.id}>
+            <TicketCard
+              image={ticket.image}
+              teamName={ticket.teamName}
+              date={ticket.date}
+              day={ticket.day}
+              time={ticket.time}
+              place={ticket.place}
+              collectionType={ticket.collectionType}
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };
