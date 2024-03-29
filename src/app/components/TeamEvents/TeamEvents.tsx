@@ -1,16 +1,14 @@
-import React from "react";
-
-import { mockEvents } from "@/app/fixtures/mockEvents.fixture";
-import { EventType } from "@/app/types";
-
 import { AdCard } from "../AdCard";
 import { EventCard } from "../EventCard";
+import { EventType } from "@/app/types";
+import React from "react";
+import { mockEvents } from "@/app/fixtures/mockEvents.fixture";
 
 export const TeamEvents = () => {
   return (
-    <div className="container mb-24 ">
+    <div className="container mb-24 text-center sm:text-left">
       <div className="text-2xl font-medium mb-6">Sports</div>
-      <div className="flex flex-wrap gap-4 mb-8">
+      <div className="flex flex-wrap gap-4 mb-8 justify-center sm:justify-start">
         {mockEvents.map((event: EventType) => (
           <EventCard
             key={event.id}
