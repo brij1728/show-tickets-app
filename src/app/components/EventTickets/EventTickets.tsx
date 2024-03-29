@@ -24,6 +24,7 @@ export const EventTickets = () => {
           experience. Grab yours today!
         </h3>
       </div>
+      <div className="flex justify-center  mb-4 ">
       <Swiper
         spaceBetween={2}
         navigation
@@ -59,6 +60,7 @@ export const EventTickets = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
     </div>
   );
 };
