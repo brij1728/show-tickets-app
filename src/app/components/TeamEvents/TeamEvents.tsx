@@ -6,7 +6,7 @@ import { mockEvents } from "@/app/fixtures/mockEvents.fixture";
 
 export const TeamEvents = () => {
   return (
-    <div className="container mb-24 text-center sm:text-left">
+    <div className="container text-center sm:text-left">
       <div className="text-2xl font-medium mb-6">Sports</div>
       <div className="flex flex-wrap gap-4 mb-8 justify-center sm:justify-start">
         {mockEvents.map((event: EventType) => (
