@@ -26,7 +26,7 @@ export const EventTickets = () => {
       </div>
       <Swiper
         spaceBetween={2}
-        slidesPerView={2}
+        slidesPerView={4}
         navigation
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
