@@ -15,7 +15,7 @@ export const EventCard: React.FC<EventCardProps> = ({
   sportName,
 }) => {
   return (
-    <div className="bg-white dark:dark:bg-[#3B3E47] drop-shadow-2xl max-w-sm w-64 p-4">
+    <div className="bg-white dark:dark:bg-[#3B3E47] drop-shadow-2xl max-w-sm w-64 p-4 mx-auto">
       <a href="#" className="block transition duration-300">
         <div style={{ position: "relative", height: "400px", maxWidth: 400 }}>
           <Image

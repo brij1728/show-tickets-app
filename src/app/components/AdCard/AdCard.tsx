@@ -9,7 +9,7 @@ interface AdCardProps {
 
 export const AdCard: React.FC<AdCardProps> = ({ adImage, title, text }) => {
   return (
-    <div className="bg-white shadow-md rounded-md max-w-sm w-64 p-4 relative">
+    <div className="bg-white shadow-md rounded-md max-w-sm w-64 p-4 relative mx-auto">
       <div className="absolute top-4 right-4 bg-black text-white font-semibold text-xs px-4 py-1 z-10">
         Ad
       </div>
