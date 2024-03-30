@@ -52,11 +52,12 @@ export const EventTickets = () => {
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          slidesPerView={1}
+          slidesPerView="auto"
           className="mb-16"
           breakpoints={{
              768: {
-              slidesPerView: "auto",
+              slidesPerView: 1,
+              
              
             },
           }} 
