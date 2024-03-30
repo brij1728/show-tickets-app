@@ -35,10 +35,10 @@ export const EventTickets = () => {
       <div className="flex justify-center flex-row items-center relative mb-4 ">
         <div
           ref={prevButtonRef}
-         className="cursor-pointer text-[#2C9CF0]"
+         className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-10 h-10  justify-center items-center mr-6"
           onClick={() => swiperRef.current?.swiper.slidePrev()}
         >
-          <HiOutlineChevronLeft className="h-8 w-8 " /> 
+          <HiOutlineChevronLeft className="h-8 w-8  " /> 
         </div>
         <Swiper
           ref={swiperRef}
@@ -69,7 +69,7 @@ export const EventTickets = () => {
         </Swiper>
         <div
           ref={nextButtonRef}
-          className="cursor-pointer  text-[#2C9CF0]"
+          className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-10 h-10  justify-center items-center ml-6"
           onClick={() => swiperRef.current?.swiper.slideNext()}
         >
            <HiOutlineChevronRight className="h-8 w-8 " />
