@@ -22,7 +22,7 @@ export const TicketCard: React.FC<TicketCardProps> = ({
 }) => {
   return (
     <div className="drop-shadow-2xl w-[257px]">
-      <div className="p-4 bg-[#fff] dark:dark:bg-[#3B3E47]">
+      <div className="md:p-4 bg-[#fff] dark:dark:bg-[#3B3E47]">
         <div className="relative h-[400px]">
           <Image
             src={image}
