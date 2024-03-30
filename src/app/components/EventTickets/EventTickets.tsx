@@ -23,7 +23,7 @@ export const EventTickets = () => {
   const nextButtonRef = React.useRef<HTMLDivElement>(null);
 
   return (
-    <div className="container p-4 bg-gradient-to-b from-white via-gray-200 to-white dark:from-[#18282A] dark:via-[#221A2C] dark:to-[#18282A]">
+    <div className="container  md:p-4 bg-gradient-to-b from-white via-gray-200 to-white dark:from-[#18282A] dark:via-[#221A2C] dark:to-[#18282A]">
       <div>
         <h2 className="font-bold text-lg mb-4">Collection Spotlight</h2>
         <h3 className="mb-8">
@@ -35,10 +35,10 @@ export const EventTickets = () => {
       <div className="flex justify-center flex-row items-center relative mb-4 ">
         <div
           ref={prevButtonRef}
-         className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-10 h-10  justify-center items-center mr-4"
+         className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-5 h-5  md:h-10 md:w-10  justify-center items-center md:mr-4"
           onClick={() => swiperRef.current?.swiper.slidePrev()}
         >
-          <HiOutlineChevronLeft className="h-8 w-8  " /> 
+          <HiOutlineChevronLeft className="h-5 w-5 md:h-10 md:w-10 " /> 
         </div>
         <Swiper
           ref={swiperRef}
@@ -52,6 +52,7 @@ export const EventTickets = () => {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           slidesPerView="auto"
+          className="mb-16" 
         >
           {mockTickets.map((ticket: TicketType) => (
             <SwiperSlide key={ticket.id} className="max-w-[260px]">
@@ -69,10 +70,10 @@ export const EventTickets = () => {
         </Swiper>
         <div
           ref={nextButtonRef}
-          className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-10 h-10  justify-center items-center ml-4"
+          className="cursor-pointer text-[#2C9CF0] bg-white dark:bg-[#18282A] border border-[#2C9CF0] dark:border-[#18282A] flex w-5 h-5  md:h-10 md:w-10  justify-center items-center md:ml-4"
           onClick={() => swiperRef.current?.swiper.slideNext()}
         >
-           <HiOutlineChevronRight className="h-8 w-8 " />
+           <HiOutlineChevronRight className="h-5 w-5 md:h-10 md:w-10" />
         </div>
       </div>
     </div>
