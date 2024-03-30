@@ -5,15 +5,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import React from "react";
-import SwiperCore from "swiper/core";
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
-import { mockTickets } from "@/app/fixtures/mockTickets.fixture";
-import { TicketType } from "@/app/types";
-
+import React from "react";
+import SwiperCore from "swiper/core";
 import { TicketCard } from "../TicketCard";
+import { TicketType } from "@/app/types";
+import { mockTickets } from "@/app/fixtures/mockTickets.fixture";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -35,10 +35,10 @@ export const EventTickets = () => {
       <div className="flex justify-center flex-row items-center relative mb-4 ">
         <div
           ref={prevButtonRef}
-          className="cursor-pointer"
+         className="cursor-pointer text-[#2C9CF0]"
           onClick={() => swiperRef.current?.swiper.slidePrev()}
         >
-          Previous
+          <HiOutlineChevronLeft className="h-8 w-8 " /> 
         </div>
         <Swiper
           ref={swiperRef}
@@ -69,10 +69,10 @@ export const EventTickets = () => {
         </Swiper>
         <div
           ref={nextButtonRef}
-          className="cursor-pointer"
+          className="cursor-pointer  text-[#2C9CF0]"
           onClick={() => swiperRef.current?.swiper.slideNext()}
         >
-          Next
+           <HiOutlineChevronRight className="h-8 w-8 " />
         </div>
       </div>
     </div>
