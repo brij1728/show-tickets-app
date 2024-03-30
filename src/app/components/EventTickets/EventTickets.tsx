@@ -48,11 +48,19 @@ export const EventTickets = () => {
             prevEl: prevButtonRef.current!,
           }}
           autoplay={{ delay: 5000 }}
+          loop={true}
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          slidesPerView="auto"
-          className="mb-16" 
+          slidesPerView={1}
+          className="mb-16"
+          breakpoints={{
+             768: {
+              slidesPerView: "auto",
+             
+            },
+          }} 
+          style={{paddingBottom: "28px"}}
         >
           {mockTickets.map((ticket: TicketType) => (
             <SwiperSlide key={ticket.id} className="max-w-[260px]">
