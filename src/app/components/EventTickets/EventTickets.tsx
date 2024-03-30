@@ -23,7 +23,7 @@ export const EventTickets = () => {
   const nextButtonRef = React.useRef<HTMLDivElement>(null);
 
   return (
-    <div className="container p-4 bg-gradient-to-b from-white via-gray-200 to-white dark:from-[#18282A] dark:via-[#221A2C] dark:to-[#18282A]">
+    <div className="container p-4 bg-gradient-to-r from-white via-gray-200 to-white dark:from-[#18282A] dark:via-[#221A2C] dark:to-[#18282A]">
       <div>
         <h2 className="font-bold text-lg mb-4">Collection Spotlight</h2>
         <h3 className="mb-8">
